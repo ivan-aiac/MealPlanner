@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group = 'aiac'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://packages.jetbrains.team/maven/p/hyperskill-hs-test/maven' }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    testImplementation 'com.github.hyperskill:hs-test:release-SNAPSHOT'
+    implementation 'org.postgresql:postgresql:42.2.27'
+}
